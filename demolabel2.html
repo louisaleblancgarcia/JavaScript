@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Label loops</title>
+
+   
+</head>
+<body>
+
+<script>
+outer:
+for(let i = 0; i<10;i++)
+{
+    let k =5;
+    for(let j = 0 ;j <10; j++)
+    {
+        if(j>5)
+        {
+            break;
+        }
+        else
+        {
+            continue outer;
+        }
+    }
+}
+
+
+</script>
+    
+</body>
+</html>

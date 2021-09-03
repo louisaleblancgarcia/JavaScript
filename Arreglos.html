@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Project</title>
+
+   
+<body>
+
+
+    <h1>Ingresar elementos a una lista</h1>
+
+  
+<ol id="ListaElementos">
+  <li>Lista</li>  
+</ol>
+<button id="agregarElemento" onclick="agregarElemento()">Ingresar </button>
+
+
+
+<script>
+    let productos =[];
+let listaProductos = document.getElementById("ListaElementos");
+
+
+function agregarElemento()
+{
+    let newElement = window.prompt('Nuevo Eleemento: ');
+    if(newElement != null)
+    {
+        productos.push(newElement);
+    }
+    console.log(productos);
+
+    while(listaProductos.firstChild)
+    {
+        listaProductos.removeChild(listaProductos.firstChild);
+
+    }
+
+    productos.forEach((producto) => {
+        let nuevoProducto = document.createElement("li");
+        let posicionArreglo = listaProductos.children.length;
+        nuevoProducto.setAttribute('id', posicionArreglo);
+        nuevoProducto.innerHTML =`${producto} <button onclick="eliminarElemento(${posicionArreglo})" id="btnDelete">Eliminar</button>`;
+        listaProductos.appendChild(nuevoProducto);
+    });
+
+}
+agregarElemento();
+ 
+
+ function eliminarElemento(posicion)
+ {
+     listaProductos.removeChild(listaProductos.childNodes[posicion]);
+ }
+</script>
+
+
+</body>
+</html>

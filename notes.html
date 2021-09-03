@@ -1,0 +1,41 @@
+<!--titulo, agregar contenido, boton para visualizar , dar de alta notas-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+ 
+
+   
+</head>
+<body>
+
+    <div style="position: absolute;top: 8%; left: 6%;" class="container mb-3">
+        <div class="row">
+            <button onclick="buscaNotas()" type="button" id="btnVisualizar"> Visualizar Notas </button>
+           
+        </div>
+
+        <div class="row oculto" id="divNotas">
+           <ol id="notasDisplay">
+
+           </ol>
+        </div>
+        <div id="divAddNotas" class="oculto row">
+            <input id="tituloID" type="text"  placeholder="Ingrese Titulo"/>
+            <input type="text"  placeholder="Ingrese Contenido"/>
+            <button  type="button" id="btnAgregar"> Agregar Notas</button> </button>
+        </div>
+        
+
+    </div>
+        
+        
+
+    </div>
+    <style src="/style.css"></style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/notes.js"></script>
+<script></script>
+</body>
+</html>

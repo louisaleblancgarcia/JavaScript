@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Label loops</title>
+
+    
+</head>
+<body>
+
+<script>
+console.log("odd number count started");
+let oddsCount = 0;
+odd_number:
+for(let i =1;i<=10;i++)
+{
+    console.log("Iteracion:" ,i);
+    var number = Math.floor(Math.random() * 12) +1;
+
+    if(number % 2 == 0)
+    {
+        continue odd_number;
+       
+    }
+    oddsCount ++;
+
+    console.log("Number: ", number);
+    
+   
+}
+console.log(oddsCount, "no se encontro");
+
+
+</script>
+    
+</body>
+</html>

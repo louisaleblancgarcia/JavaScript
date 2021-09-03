@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM</title>
+
+
+</head>
+<body>
+
+    <div id="grupoBotones">
+        <button class="odd" id="btn1" >Boton1</button>
+        <button id="btn2" >Boton 2</button>
+        <button id="btn3" class="odd">Boton 3</button>
+
+    </div>
+    
+
+<script>
+    console.log(document.children);
+
+    botonos = document.getElementsByTagName('button');
+    console.log(botonos);
+
+    botonesNones = document.getElementsByClassName("odd");
+    console.log(botonesNones)
+
+    for(boton of botonesNones)
+    {
+        boton.style.colot = "red";
+    }
+
+
+
+    let grupoBotones = document.getElementById("grupoBotones");
+    let nuevoBoton =document.createElement('button');
+    nuevoBoton.setAttribute("id", "btn4");
+    nuevoBoton.innerText = "Boton 4";
+    grupoBotones.appendChild(nuevoBoton);
+
+
+    for(boton of botonos)
+    {
+        boton.style.color = "blue"
+    }
+
+    boton1 =  document.getElementById('btn1');
+    boton1.addEventListener('click', function(){
+        alert("Botoon1");
+    });
+</script>
+  
+</body>
+</html>

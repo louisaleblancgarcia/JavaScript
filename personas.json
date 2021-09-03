@@ -1,0 +1,21 @@
+[
+    {
+    "nombre":"Luisa Itzel",
+    "apPaterno":"Garcia",
+    "apMaterno":"Hernandez",
+    "email":"luisa.garcia@gmail.com"
+    },
+    {
+        "nombre":"Angel Ivan",
+        "apPaterno":"Tequida",
+        "apMaterno":"Andujo",
+        "email":"angel.t@gmail.com"
+    },
+    {
+        "nombre":"Eva",
+        "apPaterno":"Villagomez",
+        "apMaterno":"Dominguez",
+        "email":"eva@gmail.com"
+        
+        }
+]

@@ -1,0 +1,32 @@
+<!--caja de texto, consultar boton-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+ 
+
+   
+</head>
+<body>
+
+    <div style="position: absolute;top: 8%; left: 6%;" class="container mb-3">
+        <div class="row mb-4">
+            <input id="inputId" type="text" placeholder="Ingrese id de usuario" />
+            <button onclick="buscaUsuario()" type="button" id="btnIngresar" >Submit </button>
+        </div>
+        <div class="row" style="position: absolute; left: 4%;">
+            <p>Nomnre: <input type="text" id="inputName" readonly  /></p>
+            <p>Correo: <input type="text" id="inputMail" readonly /></p>
+        </div>
+        
+        
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/consulta-usuarios-FetchAPI-Call.js"></script>
+<script></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Functions</title>
+
+</head>
+<body>
+    <script src="/functions.js"></script>
+<script>
+let resultado = sumaNumeros(80,40);
+alert(resultado);
+cadena = "LuisaHarcia";
+caracterBuscado = "r"
+let encontrado = buscaCaracter(cadena, caracterBuscado);
+
+alert(`El caracter ${caracterBuscado} ${encontrado? "si" : "no"} existe en la cadena ${cadena}`);
+
+
+//funcion anonima asignada a una variable
+var elevaAlCuadradoFuncion = function (numero, potencia)
+{
+    return Mat.pow(numero,potencia);
+}
+alert(elevaAlCuadradoFuncion(2,4));
+
+const multiplicacion = (x,y) => x*y;
+
+alert(multiplicacion(50,20));
+
+const potenciaNumero = (numero, potencia) => {
+    
+    Math.pow(numero, potencia);
+}
+alert(potenciaNumero(5,5));
+
+</script>
+    
+</body>
+</html>
